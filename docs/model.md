@@ -17,4 +17,4 @@
 
 ## Модель данных
 
-![](assets/images/db_design.png)
+![](assets/images/ERD.png)
