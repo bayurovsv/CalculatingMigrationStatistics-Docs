@@ -2,7 +2,7 @@
 
 ## Definition of Ready & Definition of Done
 
-![](\diagrams\DoR.svg)
+![](\diagrams\out\DoR.svg)
 
 ## Критерии приёмки для UserStory
 
