@@ -117,6 +117,8 @@ nav:
     - architecture.md
     - uiux.md
     - api.md
+  - Критерии приёмки:
+    - ac/AC.md
   - Задачи:
     - tasks/registration_client.md
     - tasks/registration_user.md
