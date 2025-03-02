@@ -2,6 +2,8 @@
 
 ## Definition of Ready & Definition of Done
 
+Definition of Ready & Definition of Done таблица.
+
 ![](\diagrams\out\DoR.svg)
 
 ## Критерии приёмки для UserStory
