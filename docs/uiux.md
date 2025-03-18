@@ -30,7 +30,7 @@
 
 ### **`WF7`** Настройка модуля
 
-![](assets/images/settings_module.jpg.jpg)
+![](assets/images/settings_module.jpg)
 
 ### **`WF8`** Привязка объектов базы данных и артефактов к модулю
 
