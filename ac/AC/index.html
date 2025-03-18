@@ -5,8 +5,6 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="../../api/" rel="prev"/>
-<link href="../../tasks/registration_client/" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.7" name="generator"/>
 <title>Критерии приёмки для User Story USSCMS - Система автоматического контроля, сбора, классификации и предоставления статистики по процессу миграции ЦАБС</title>
@@ -17,6 +15,8 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../assets/mkdocs_puml/puml.css" rel="stylesheet"/>
+<link href="../../assets/mkdocs_puml/interaction.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <link href="../../assets/stylesheets/custom.2fa34c39.min.css" rel="stylesheet"/>
  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
@@ -138,27 +138,47 @@
   
     
   
-  Документация
-
-        </a>
-</li>
-<li class="md-tabs__item md-tabs__item--active">
-<a class="md-tabs__link" href="./">
-          
-  
-    
-  
-  Критерии приёмки
+  Глоссарий
 
         </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../tasks/registration_client/">
+<a class="md-tabs__link" href="../../general%20info/">
+          
+  
+    
+  
+  Документация бизнес-требований
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../requirements/">
+          
+  
+    
+  
+  Документация системы
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../DoDDoR/">
           
   
     
   
   Задачи
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../tests/USSCMS/">
+          
+  
+    
+  
+  Тесты
 
         </a>
 </li>
@@ -211,7 +231,7 @@
 <input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
 <span class="md-ellipsis">
-    Документация
+    Глоссарий
     
   </span>
 <span class="md-nav__icon md-icon"></span>
@@ -219,7 +239,7 @@
 <nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_2">
 <span class="md-nav__icon md-icon"></span>
-            Документация
+            Глоссарий
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
@@ -230,6 +250,24 @@
   </span>
 </a>
 </li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Документация бизнес-требований
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Документация бизнес-требований
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../general%20info/">
 <span class="md-ellipsis">
@@ -270,6 +308,24 @@
   </span>
 </a>
 </li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Документация системы
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            Документация системы
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../requirements/">
 <span class="md-ellipsis">
@@ -313,225 +369,91 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-<span class="md-ellipsis">
-    Критерии приёмки
-    
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_3">
-<span class="md-nav__icon md-icon"></span>
-            Критерии приёмки
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-ellipsis">
-    Критерии приёмки для User Story USSCMS
-    
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
-<span class="md-ellipsis">
-    Критерии приёмки для User Story USSCMS
-    
-  </span>
-</a>
-<nav aria-label="Содержание" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Содержание
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usscms-acus01">
-<span class="md-ellipsis">
-      USSCMS-ACUS01 Я как руководитель ХОЧУ видеть актуальный список проектов и модулей ДЛЯ быстрой навигации по интересующим проектам и модулям
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usscms-acus02">
-<span class="md-ellipsis">
-      USSCMS-ACUS02 Я как руководитель ХОЧУ использовать фильтры ЧТОБЫ быстро найти то что мне нужно
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usscms-acus03">
-<span class="md-ellipsis">
-      USSCMS-ACUS03 Я как руководитель ХОЧУ сохранять используемый фильтр ЧТОБЫ сократить время на заполнение необходимых полей в фильтре
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usscms-acus04">
-<span class="md-ellipsis">
-      USSCMS-ACUS04 Я как руководитель ХОЧУ видеть ответственных за проект и модуль ЧТОБЫ понимать, к кому обращаться по вопросам миграции по проекту/модулю
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usscms-acus05">
-<span class="md-ellipsis">
-      USSCMS-ACUS05 Я как руководитель ХОЧУ иметь возможность по одной кнопке создать задачи на миграцию серверной части проекта/модуля ЧТОБЫ сократить время на ручные операции
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usscms-acus06-jira">
-<span class="md-ellipsis">
-      USSCMS-ACUS06 Я как руководитель ХОЧУ иметь возможность отправлять созданные задачи в Jira ЧТОБЫ фиксировать процесс миграции в одном месте
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usscms-acus07">
-<span class="md-ellipsis">
-      USSCMS-ACUS07 Я как руководитель ХОЧУ посмотреть отчёт по миграции серверной части ЧТОБЫ оценить прогресс процесса миграции
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usscms-acus08">
-<span class="md-ellipsis">
-      USSCMS-ACUS08 Я как руководитель ХОЧУ фиксировать в отчёте необходимые в текущий момент проекты и модули ЧТОБЫ оперативно оценить прогресс миграции на конкретных проектах и модулях
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usscms-acus09">
-<span class="md-ellipsis">
-      USSCMS-ACUS09 Я как руководитель ХОЧУ запустить процесс анализа всех серверных объектов ЧТОБЫ получать актуальную информацию по процессу миграции серверных объектов
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usscms-acus10">
-<span class="md-ellipsis">
-      USSCMS-ACUS10 Я как руководитель ХОЧУ запустить процесс анализа указанных проектов и модулей ЧТОБЫ получать необходимую актуальную информацию по миграции проектов и модулей
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usscms-acus11">
-<span class="md-ellipsis">
-      USSCMS-ACUS11 Я как руководитель ХОЧУ установить периодичность выполнения анализа серверных объектов ЧТОБЫ получать актуальные данные без моего участия
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usscms-acus12">
-<span class="md-ellipsis">
-      USSCMS-ACUS12 Я как пользователь ХОЧУ видеть зависимости серверного объекта от других объектов, если такие имеются ЧТОБЫ видеть какие объекты использует выбранные объект миграции
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usscms-acus13">
-<span class="md-ellipsis">
-      USSCMS-ACUS13 Я как пользователь ХОЧУ видеть статусы перевода зависимых серверных объектов ЧТОБЫ принимать решение по целесообразности брать в работу по миграции данный объект
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usscms-acus14">
-<span class="md-ellipsis">
-      USSCMS-ACUS14 Я как пользователь ХОЧУ произвести миграцию таблицы базы данных по одной кнопке ЧТОБЫ сократить время миграции и сконцентрироваться на других объектах БД проекта
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usscms-acus15">
-<span class="md-ellipsis">
-      USSCMS-ACUS15 Я как пользователь ХОЧУ иметь возможность пред установить типы данных колонок таблиц ЧТОБЫ сократить время на ручные операции при конвертации таблицы и сохранить консистентность данных
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usscms-acus16">
-<span class="md-ellipsis">
-      USSCMS-ACUS16 Я как пользователь ХОЧУ сменить статус выполнения миграции объекта БД ЧТОБЫ показать, что работы по миграции объекта БД завершены
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usscms-acus17-jira">
-<span class="md-ellipsis">
-      USSCMS-ACUS17 Я как пользователь ХОЧУ функционал автоматической смены статуса задачи в Jira ЧТОБЫ сократить время на ручные операции
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usscms-acus18">
-<span class="md-ellipsis">
-      USSCMS-ACUS18 Я как пользователь ХОЧУ видеть историю изменения объекта БД ЧТОБЫ оперативно решить выявленные ошибки
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4" type="checkbox"/>
-<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
 <span class="md-ellipsis">
     Задачи
     
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_4">
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
 <span class="md-nav__icon md-icon"></span>
             Задачи
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../tasks/registration_client/">
+<a class="md-nav__link" href="../DoDDoR/">
 <span class="md-ellipsis">
-    Регистрация клиента
+    Definition of Ready &amp; Definition of Done
     
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../tasks/registration_user/">
+<a class="md-nav__link" href="../../tasks/USSCMS/">
 <span class="md-ellipsis">
-    Регистрация пользователя
+    Задачи по разработке сервиса расчёта статистики миграции
     
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../tasks/auth_client/">
+<a class="md-nav__link" href="../../tasks/USSDTODB/">
 <span class="md-ellipsis">
-    Аутентификация клиента
+    Задачи по разработке сервиса получения данных по процессу миграции объектов БД
     
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../tasks/auth_user/">
+<a class="md-nav__link" href="../../tasks/USSDTA/">
 <span class="md-ellipsis">
-    Аутентификация пользователя
+    Задачи по разработке сервиса получения данных по процессу миграции Jar
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-ellipsis">
+    Тесты
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            Тесты
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tests/USSCMS/">
+<span class="md-ellipsis">
+    Тест-кейсы
     
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../tasks/booking_table/">
+<a class="md-nav__link" href="../../tests/USSDTODB/">
 <span class="md-ellipsis">
-    Бронирование столиков из списка
+    Создание задачи на миграцию объекта
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tests/USSDTA/">
+<span class="md-ellipsis">
+    Просмотр ответственных за проект и модуль
     
   </span>
 </a>
@@ -546,73 +468,73 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="user-story-usscms"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.</span> Критерии приёмки для User Story <a href="../../requirements/#usscms-user-story">USSCMS</a><a class="headerlink" href="#user-story-usscms" title="Permanent link">¶</a></h1>
-<h2 id="usscms-acus01"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.1</span> <strong><code>USSCMS-ACUS01</code></strong> Я как руководитель ХОЧУ видеть актуальный список проектов и модулей ДЛЯ быстрой навигации по интересующим проектам и модулям<a class="headerlink" href="#usscms-acus01" title="Permanent link">¶</a></h2>
+<h1 id="user-story-usscms">Критерии приёмки для User Story <a href="../../requirements/#usscms-user-story">USSCMS</a><a class="headerlink" href="#user-story-usscms" title="Permanent link">¶</a></h1>
+<h2 id="usscms-acus01"><strong><code>USSCMS-ACUS01</code></strong> Я как руководитель ХОЧУ видеть актуальный список проектов и модулей ДЛЯ быстрой навигации по интересующим проектам и модулям<a class="headerlink" href="#usscms-acus01" title="Permanent link">¶</a></h2>
 <ol>
 <li>Отчет состоит из структурированного списка проектов </li>
 <li>В отчете отображается информация минимум для одного модуля проекта </li>
 <li>В отчете содержится сводная информация по процессу миграции объектов</li>
 <li>Для каждого объекта отображается процентное соотношение переведенного кода</li>
 </ol>
-<h2 id="usscms-acus02"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.2</span> <strong><code>USSCMS-ACUS02</code></strong> Я как руководитель ХОЧУ использовать фильтры ЧТОБЫ быстро найти то что мне нужно<a class="headerlink" href="#usscms-acus02" title="Permanent link">¶</a></h2>
+<h2 id="usscms-acus02"><strong><code>USSCMS-ACUS02</code></strong> Я как руководитель ХОЧУ использовать фильтры ЧТОБЫ быстро найти то что мне нужно<a class="headerlink" href="#usscms-acus02" title="Permanent link">¶</a></h2>
 <ol>
 <li>В окне просмотра отображается список продуктов</li>
 <li>При выборе продукта отображается список модулей входящих в проект.</li>
 <li>При выборе модуля отображается информация по объектам из которых он состоит.</li>
 </ol>
-<h2 id="usscms-acus03"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.3</span> <strong><code>USSCMS-ACUS03</code></strong> Я как руководитель ХОЧУ сохранять используемый фильтр ЧТОБЫ сократить время на заполнение необходимых полей в фильтре<a class="headerlink" href="#usscms-acus03" title="Permanent link">¶</a></h2>
+<h2 id="usscms-acus03"><strong><code>USSCMS-ACUS03</code></strong> Я как руководитель ХОЧУ сохранять используемый фильтр ЧТОБЫ сократить время на заполнение необходимых полей в фильтре<a class="headerlink" href="#usscms-acus03" title="Permanent link">¶</a></h2>
 <ol>
 <li>Активация механизма формирования отчета по проекту осуществляется при выборе проекта и нажатии кнопки сформировать отчет.</li>
 <li>Появляется диалоговое окно со списком форматов в который можно конвертировать отчет.</li>
 </ol>
-<h2 id="usscms-acus04"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.4</span> <strong><code>USSCMS-ACUS04</code></strong> Я как руководитель ХОЧУ видеть ответственных за проект и модуль ЧТОБЫ понимать, к кому обращаться по вопросам миграции по проекту/модулю<a class="headerlink" href="#usscms-acus04" title="Permanent link">¶</a></h2>
+<h2 id="usscms-acus04"><strong><code>USSCMS-ACUS04</code></strong> Я как руководитель ХОЧУ видеть ответственных за проект и модуль ЧТОБЫ понимать, к кому обращаться по вопросам миграции по проекту/модулю<a class="headerlink" href="#usscms-acus04" title="Permanent link">¶</a></h2>
 <ol>
 <li>Активация механизма формирования отчета по модулю осуществляется при выборе модуля и нажатии кнопки сформировать отчет.</li>
 <li>Появляется диалоговое окно со списком форматов в который можно конвертировать отчет. </li>
 </ol>
-<h2 id="usscms-acus05"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.5</span> <strong><code>USSCMS-ACUS05</code></strong> Я как руководитель ХОЧУ иметь возможность по одной кнопке создать задачи на миграцию серверной части проекта/модуля ЧТОБЫ сократить время на ручные операции<a class="headerlink" href="#usscms-acus05" title="Permanent link">¶</a></h2>
+<h2 id="usscms-acus05"><strong><code>USSCMS-ACUS05</code></strong> Я как руководитель ХОЧУ иметь возможность по одной кнопке создать задачи на миграцию серверной части проекта/модуля ЧТОБЫ сократить время на ручные операции<a class="headerlink" href="#usscms-acus05" title="Permanent link">¶</a></h2>
 <p>В окне при просмотре информации модуля в специальном поле отображается информация ответственного за процесс миграции  модуля</p>
-<h2 id="usscms-acus06-jira"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.6</span> <strong><code>USSCMS-ACUS06</code></strong> Я как руководитель ХОЧУ иметь возможность отправлять созданные задачи в Jira ЧТОБЫ фиксировать процесс миграции в одном месте<a class="headerlink" href="#usscms-acus06-jira" title="Permanent link">¶</a></h2>
+<h2 id="usscms-acus06-jira"><strong><code>USSCMS-ACUS06</code></strong> Я как руководитель ХОЧУ иметь возможность отправлять созданные задачи в Jira ЧТОБЫ фиксировать процесс миграции в одном месте<a class="headerlink" href="#usscms-acus06-jira" title="Permanent link">¶</a></h2>
 <p>При выборе модуля на форме отображается его структура, клиентские и серверные объекты.</p>
-<h2 id="usscms-acus07"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.7</span> <strong><code>USSCMS-ACUS07</code></strong> Я как руководитель ХОЧУ посмотреть отчёт по миграции серверной части ЧТОБЫ оценить прогресс процесса миграции<a class="headerlink" href="#usscms-acus07" title="Permanent link">¶</a></h2>
+<h2 id="usscms-acus07"><strong><code>USSCMS-ACUS07</code></strong> Я как руководитель ХОЧУ посмотреть отчёт по миграции серверной части ЧТОБЫ оценить прогресс процесса миграции<a class="headerlink" href="#usscms-acus07" title="Permanent link">¶</a></h2>
 <ol>
 <li>При просмотре информации модуля у пользователя с определённым набором прав появляется возможность добавлять/изменять ответственного за процесс перевода модуля</li>
 <li>После нажатия "Изменения ответственного", отображается список  сотрудников, которые могут быть назначены ответственными</li>
 </ol>
-<h2 id="usscms-acus08"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.8</span> <strong><code>USSCMS-ACUS08</code></strong> Я как руководитель ХОЧУ фиксировать в отчёте необходимые в текущий момент проекты и модули ЧТОБЫ оперативно оценить прогресс миграции на конкретных проектах и модулях<a class="headerlink" href="#usscms-acus08" title="Permanent link">¶</a></h2>
+<h2 id="usscms-acus08"><strong><code>USSCMS-ACUS08</code></strong> Я как руководитель ХОЧУ фиксировать в отчёте необходимые в текущий момент проекты и модули ЧТОБЫ оперативно оценить прогресс миграции на конкретных проектах и модулях<a class="headerlink" href="#usscms-acus08" title="Permanent link">¶</a></h2>
 <ol>
 <li>При выборе проекта на форме отображается его структура, список модулей.</li>
 <li>Для детального просмотра необходимо выбрать модулю, после чего отобразиться его структура.</li>
 </ol>
-<h2 id="usscms-acus09"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.9</span> <strong><code>USSCMS-ACUS09</code></strong> Я как руководитель ХОЧУ запустить процесс анализа всех серверных объектов ЧТОБЫ получать актуальную информацию по процессу миграции серверных объектов<a class="headerlink" href="#usscms-acus09" title="Permanent link">¶</a></h2>
+<h2 id="usscms-acus09"><strong><code>USSCMS-ACUS09</code></strong> Я как руководитель ХОЧУ запустить процесс анализа всех серверных объектов ЧТОБЫ получать актуальную информацию по процессу миграции серверных объектов<a class="headerlink" href="#usscms-acus09" title="Permanent link">¶</a></h2>
 <p>см. критерий 1 <a href="./#usscms-acus08">USSCMS-ACUS08</a></p>
-<h2 id="usscms-acus10"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.10</span> <strong><code>USSCMS-ACUS10</code></strong> Я как руководитель ХОЧУ запустить процесс анализа указанных проектов и модулей ЧТОБЫ получать необходимую актуальную информацию по миграции проектов и модулей<a class="headerlink" href="#usscms-acus10" title="Permanent link">¶</a></h2>
+<h2 id="usscms-acus10"><strong><code>USSCMS-ACUS10</code></strong> Я как руководитель ХОЧУ запустить процесс анализа указанных проектов и модулей ЧТОБЫ получать необходимую актуальную информацию по миграции проектов и модулей<a class="headerlink" href="#usscms-acus10" title="Permanent link">¶</a></h2>
 <ol>
 <li>При выборе проекта у пользователя с определенным набором прав, отображается кнопка "Изменение структуры проекта"</li>
 <li>После нажатия открывается форма, на которой отображается список модулей, которые можно привязать к проекту.</li>
 <li>Привязка модуля осуществляется простановкой "Галки"</li>
 </ol>
-<h2 id="usscms-acus11"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.11</span> <strong><code>USSCMS-ACUS11</code></strong> Я как руководитель ХОЧУ установить периодичность выполнения анализа серверных объектов ЧТОБЫ получать актуальные данные без моего участия<a class="headerlink" href="#usscms-acus11" title="Permanent link">¶</a></h2>
+<h2 id="usscms-acus11"><strong><code>USSCMS-ACUS11</code></strong> Я как руководитель ХОЧУ установить периодичность выполнения анализа серверных объектов ЧТОБЫ получать актуальные данные без моего участия<a class="headerlink" href="#usscms-acus11" title="Permanent link">¶</a></h2>
 <ol>
 <li>Активация механизма формирования отчета по проекту осуществляется при выборе проекта и нажатии кнопки сформировать отчет.</li>
 <li>Появляется диалоговое окно со списком форматов в который можно конвертировать отчет.</li>
 </ol>
-<h2 id="usscms-acus12"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.12</span> <strong><code>USSCMS-ACUS12</code></strong> Я как пользователь ХОЧУ видеть зависимости серверного объекта от других объектов, если такие имеются ЧТОБЫ видеть какие объекты использует выбранные объект миграции<a class="headerlink" href="#usscms-acus12" title="Permanent link">¶</a></h2>
+<h2 id="usscms-acus12"><strong><code>USSCMS-ACUS12</code></strong> Я как пользователь ХОЧУ видеть зависимости серверного объекта от других объектов, если такие имеются ЧТОБЫ видеть какие объекты использует выбранные объект миграции<a class="headerlink" href="#usscms-acus12" title="Permanent link">¶</a></h2>
 <p>см. <a href="./#usscms-acus08">USSCMS-ACUS08</a></p>
-<h2 id="usscms-acus13"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.13</span> <strong><code>USSCMS-ACUS13</code></strong> Я как пользователь ХОЧУ видеть статусы перевода зависимых серверных объектов ЧТОБЫ принимать решение по целесообразности брать в работу по миграции данный объект<a class="headerlink" href="#usscms-acus13" title="Permanent link">¶</a></h2>
+<h2 id="usscms-acus13"><strong><code>USSCMS-ACUS13</code></strong> Я как пользователь ХОЧУ видеть статусы перевода зависимых серверных объектов ЧТОБЫ принимать решение по целесообразности брать в работу по миграции данный объект<a class="headerlink" href="#usscms-acus13" title="Permanent link">¶</a></h2>
 <p>см. <a href="./#usscms-acus03">USSCMS-US03</a></p>
-<h2 id="usscms-acus14"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.14</span> <strong><code>USSCMS-ACUS14</code></strong> Я как пользователь ХОЧУ произвести миграцию таблицы базы данных по одной кнопке ЧТОБЫ сократить время миграции и сконцентрироваться на других объектах БД проекта<a class="headerlink" href="#usscms-acus14" title="Permanent link">¶</a></h2>
+<h2 id="usscms-acus14"><strong><code>USSCMS-ACUS14</code></strong> Я как пользователь ХОЧУ произвести миграцию таблицы базы данных по одной кнопке ЧТОБЫ сократить время миграции и сконцентрироваться на других объектах БД проекта<a class="headerlink" href="#usscms-acus14" title="Permanent link">¶</a></h2>
 <p>см. <a href="./#usscms-acus04">USSCMS-US04</a></p>
-<h2 id="usscms-acus15"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.15</span> <strong><code>USSCMS-ACUS15</code></strong> Я как пользователь ХОЧУ иметь возможность пред установить типы данных колонок таблиц ЧТОБЫ сократить время на ручные операции при конвертации таблицы и сохранить консистентность данных<a class="headerlink" href="#usscms-acus15" title="Permanent link">¶</a></h2>
+<h2 id="usscms-acus15"><strong><code>USSCMS-ACUS15</code></strong> Я как пользователь ХОЧУ иметь возможность пред установить типы данных колонок таблиц ЧТОБЫ сократить время на ручные операции при конвертации таблицы и сохранить консистентность данных<a class="headerlink" href="#usscms-acus15" title="Permanent link">¶</a></h2>
 <p>см. <a href="./#usscms-acus03">USSCMS-US03</a></p>
-<h2 id="usscms-acus16"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.16</span> <strong><code>USSCMS-ACUS16</code></strong> Я как пользователь ХОЧУ сменить статус выполнения миграции объекта БД ЧТОБЫ показать, что работы по миграции объекта БД завершены<a class="headerlink" href="#usscms-acus16" title="Permanent link">¶</a></h2>
+<h2 id="usscms-acus16"><strong><code>USSCMS-ACUS16</code></strong> Я как пользователь ХОЧУ сменить статус выполнения миграции объекта БД ЧТОБЫ показать, что работы по миграции объекта БД завершены<a class="headerlink" href="#usscms-acus16" title="Permanent link">¶</a></h2>
 <p>см. <a href="./#usscms-acus04">USSCMS-US04</a></p>
-<h2 id="usscms-acus17-jira"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.17</span> <strong><code>USSCMS-ACUS17</code></strong> Я как пользователь ХОЧУ функционал автоматической смены статуса задачи в Jira ЧТОБЫ сократить время на ручные операции<a class="headerlink" href="#usscms-acus17-jira" title="Permanent link">¶</a></h2>
+<h2 id="usscms-acus17-jira"><strong><code>USSCMS-ACUS17</code></strong> Я как пользователь ХОЧУ функционал автоматической смены статуса задачи в Jira ЧТОБЫ сократить время на ручные операции<a class="headerlink" href="#usscms-acus17-jira" title="Permanent link">¶</a></h2>
 <ol>
 <li>При формировании отчета на окне выбора форматов конвертации, добавляется "Галка" отправить отчет на почту.</li>
 <li>Почта берется из настроек учетной записи пользователя</li>
 </ol>
-<h2 id="usscms-acus18"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.18</span> <strong><code>USSCMS-ACUS18</code></strong> Я как пользователь ХОЧУ видеть историю изменения объекта БД ЧТОБЫ оперативно решить выявленные ошибки<a class="headerlink" href="#usscms-acus18" title="Permanent link">¶</a></h2>
+<h2 id="usscms-acus18"><strong><code>USSCMS-ACUS18</code></strong> Я как пользователь ХОЧУ видеть историю изменения объекта БД ЧТОБЫ оперативно решить выявленные ошибки<a class="headerlink" href="#usscms-acus18" title="Permanent link">¶</a></h2>
 <ol>
 <li>У пользователя с определенным набором прав отображается кнопка настройки отчетов.</li>
 <li>При нажатии на кнопку открывается окно с настройками.</li>
@@ -622,8 +544,8 @@
 <li>Настройка автоматической отправки отчета на почту</li>
 <li>Настройка отображения графиков в отчете</li>
 </ol>
-<h1 id="user-story-ussdtodb"><span class="enumerate-headings-plugin enumerate-heading-plugin">12.</span> Критерии приёмки для User Story <a href="../../requirements/#ussdtodb-user-story">USSDTODB</a><a class="headerlink" href="#user-story-ussdtodb" title="Permanent link">¶</a></h1>
-<h2 id="ussdtodb-acus01"><span class="enumerate-headings-plugin enumerate-heading-plugin">12.1</span> <strong><code>USSDTODB-ACUS01</code></strong> Я как руководитель ХОЧУ видеть актуальный список проектов и модулей ДЛЯ быстрой навигации по интересующим проектам и модулям<a class="headerlink" href="#ussdtodb-acus01" title="Permanent link">¶</a></h2>
+<h1 id="user-story-ussdtodb">Критерии приёмки для User Story <a href="../../requirements/#ussdtodb-user-story">USSDTODB</a><a class="headerlink" href="#user-story-ussdtodb" title="Permanent link">¶</a></h1>
+<h2 id="ussdtodb-acus01"><strong><code>USSDTODB-ACUS01</code></strong> Я как руководитель ХОЧУ видеть актуальный список проектов и модулей ДЛЯ быстрой навигации по интересующим проектам и модулям<a class="headerlink" href="#ussdtodb-acus01" title="Permanent link">¶</a></h2>
 <ol>
 <li>На главной форме приложения отображены: <ul>
 <li>объекты БД в привязке к проекту и модулю (см. критерий 2)</li>
@@ -640,7 +562,7 @@
 </li>
 <li>Навигация происходит путём выбора значения из выпадающего списка.</li>
 </ol>
-<h2 id="ussdtodb-acus02"><span class="enumerate-headings-plugin enumerate-heading-plugin">12.2</span> <strong><code>USSDTODB-ACUS02</code></strong> Я как руководитель ХОЧУ использовать фильтры ЧТОБЫ быстро найти то что мне нужно<a class="headerlink" href="#ussdtodb-acus02" title="Permanent link">¶</a></h2>
+<h2 id="ussdtodb-acus02"><strong><code>USSDTODB-ACUS02</code></strong> Я как руководитель ХОЧУ использовать фильтры ЧТОБЫ быстро найти то что мне нужно<a class="headerlink" href="#ussdtodb-acus02" title="Permanent link">¶</a></h2>
 <ol>
 <li>Активация функции "Фильтр" происходит путем нажатия на кнопку "Фильтр" на панели инструментов так и через клавишу F7</li>
 <li>Форма фильтра состоит из полей таблицы с основной формы</li>
@@ -648,7 +570,7 @@
 <li>Фильтрация должна позволять ввод SQL-кода условий в полях</li>
 <li>Выполнение фильтра происходит путем нажатия кнопки "Ок" так и через клавишу F8</li>
 </ol>
-<h2 id="ussdtodb-acus03"><span class="enumerate-headings-plugin enumerate-heading-plugin">12.3</span> <strong><code>USSDTODB-ACUS03</code></strong> Я как руководитель ХОЧУ сохранять используемый фильтр ЧТОБЫ сократить время на заполнение необходимых полей в фильтре<a class="headerlink" href="#ussdtodb-acus03" title="Permanent link">¶</a></h2>
+<h2 id="ussdtodb-acus03"><strong><code>USSDTODB-ACUS03</code></strong> Я как руководитель ХОЧУ сохранять используемый фильтр ЧТОБЫ сократить время на заполнение необходимых полей в фильтре<a class="headerlink" href="#ussdtodb-acus03" title="Permanent link">¶</a></h2>
 <ol>
 <li>Активация функции "Сохранить фильтр" происходит путем нажатия на кнопку "Сохранить фильтр" на панели инструментов</li>
 <li>Активация функции "Загрузить фильтр" происходит путем нажатия на кнопку "Загрузить фильтр" с последующем применением на таблицу главной формы</li>
@@ -661,7 +583,7 @@
 </ul>
 </li>
 </ol>
-<h2 id="ussdtodb-acus04"><span class="enumerate-headings-plugin enumerate-heading-plugin">12.4</span> <strong><code>USSDTODB-ACUS04</code></strong> Я как руководитель ХОЧУ видеть ответственных за проект и модуль ЧТОБЫ понимать, к кому обращаться по вопросам миграции по проекту/модулю<a class="headerlink" href="#ussdtodb-acus04" title="Permanent link">¶</a></h2>
+<h2 id="ussdtodb-acus04"><strong><code>USSDTODB-ACUS04</code></strong> Я как руководитель ХОЧУ видеть ответственных за проект и модуль ЧТОБЫ понимать, к кому обращаться по вопросам миграции по проекту/модулю<a class="headerlink" href="#ussdtodb-acus04" title="Permanent link">¶</a></h2>
 <ol>
 <li>Просмотр ответственных сотрудников за перевод проектов и модулей осуществляется через переход на форму "Проекты" или "Модули" по кнопке в панели инструментов</li>
 <li>В форме присутствует функционал по запросу актуального списка проектов и модулей</li>
@@ -671,7 +593,7 @@
 <li>Разработчик</li>
 <li>Тестировщик</li>
 </ol>
-<h2 id="ussdtodb-acus05"><span class="enumerate-headings-plugin enumerate-heading-plugin">12.5</span> <strong><code>USSDTODB-ACUS05</code></strong> Я как руководитель ХОЧУ иметь возможность по одной кнопке создать задачи на миграцию серверной части проекта/модуля ЧТОБЫ сократить время на ручные операции<a class="headerlink" href="#ussdtodb-acus05" title="Permanent link">¶</a></h2>
+<h2 id="ussdtodb-acus05"><strong><code>USSDTODB-ACUS05</code></strong> Я как руководитель ХОЧУ иметь возможность по одной кнопке создать задачи на миграцию серверной части проекта/модуля ЧТОБЫ сократить время на ручные операции<a class="headerlink" href="#ussdtodb-acus05" title="Permanent link">¶</a></h2>
 <ul>
 <li>Создание задачи на миграцию происходит по следующему сценарию:<ol>
 <li>Открытие формы заведения задачи на миграцию путем нажатия кнопки на панели инструментов главной формы "Создать задачу" осуществляется для выбранного объекта БД в таблице</li>
@@ -689,14 +611,14 @@
 </ol>
 </li>
 </ul>
-<h2 id="ussdtodb-acus06-jira"><span class="enumerate-headings-plugin enumerate-heading-plugin">12.6</span> <strong><code>USSDTODB-ACUS06</code></strong> Я как руководитель ХОЧУ иметь возможность отправлять созданные задачи в Jira ЧТОБЫ фиксировать процесс миграции в одном месте<a class="headerlink" href="#ussdtodb-acus06-jira" title="Permanent link">¶</a></h2>
+<h2 id="ussdtodb-acus06-jira"><strong><code>USSDTODB-ACUS06</code></strong> Я как руководитель ХОЧУ иметь возможность отправлять созданные задачи в Jira ЧТОБЫ фиксировать процесс миграции в одном месте<a class="headerlink" href="#ussdtodb-acus06-jira" title="Permanent link">¶</a></h2>
 <ol>
 <li>При заведении задачи происходит поиск ссылки на проект в Jira</li>
 <li>Выведено сообщение по созданию задачи в Jira</li>
 <li>Заполненные поля (см. <a href="./#ussdtodb-acus05">USSDTODB-ACUS05</a> ) преобразованы в xml согласно API Jira</li>
 <li>При успешной передаче данных и создании задачи в Jira выводится сообщение с ссылкой на эту задачу</li>
 </ol>
-<h2 id="ussdtodb-acus07"><span class="enumerate-headings-plugin enumerate-heading-plugin">12.7</span> <strong><code>USSDTODB-ACUS07</code></strong> Я как руководитель ХОЧУ посмотреть отчёт по миграции серверной части ЧТОБЫ оценить прогресс процесса миграции<a class="headerlink" href="#ussdtodb-acus07" title="Permanent link">¶</a></h2>
+<h2 id="ussdtodb-acus07"><strong><code>USSDTODB-ACUS07</code></strong> Я как руководитель ХОЧУ посмотреть отчёт по миграции серверной части ЧТОБЫ оценить прогресс процесса миграции<a class="headerlink" href="#ussdtodb-acus07" title="Permanent link">¶</a></h2>
 <ol>
 <li>Запуск формы отчётов происходит по нажатию кнопки "Альтернативная печать" в панели инструментов главной формы</li>
 <li>Указание места сохранения и название файла задаётся пользователем путем выбора.</li>
@@ -709,36 +631,36 @@
 </li>
 <li>Время запуска процедуры построения отчёта до вывода отчёта на экран должно занимать не больше 1 минуты</li>
 </ol>
-<h2 id="ussdtodb-acus08"><span class="enumerate-headings-plugin enumerate-heading-plugin">12.8</span> <strong><code>USSDTODB-ACUS08</code></strong> Я как руководитель ХОЧУ фиксировать в отчёте необходимые в текущий момент проекты и модули ЧТОБЫ оперативно оценить прогресс миграции на конкретных проектах и модулях<a class="headerlink" href="#ussdtodb-acus08" title="Permanent link">¶</a></h2>
+<h2 id="ussdtodb-acus08"><strong><code>USSDTODB-ACUS08</code></strong> Я как руководитель ХОЧУ фиксировать в отчёте необходимые в текущий момент проекты и модули ЧТОБЫ оперативно оценить прогресс миграции на конкретных проектах и модулях<a class="headerlink" href="#ussdtodb-acus08" title="Permanent link">¶</a></h2>
 <ol>
 <li>В форме настройки отчёта присутствует выбор проектов и модулей</li>
 <li>В функционале выбора присутствует опция "Выбрать всё"</li>
 <li>Быстродействие выполнения процедуры построения отчёта не должна превышать установленному значению для общего отчёта (см. критерий 6 <a href="./#ussdtodb-acus07">USSDTODB-ACUS07</a>)</li>
 </ol>
-<h2 id="ussdtodb-acus09"><span class="enumerate-headings-plugin enumerate-heading-plugin">12.9</span> <strong><code>USSDTODB-ACUS09</code></strong> Я как пользователь ХОЧУ видеть зависимости серверного объекта от других объектов, если такие имеются ЧТОБЫ видеть какие объекты использует выбранные объект миграции<a class="headerlink" href="#ussdtodb-acus09" title="Permanent link">¶</a></h2>
+<h2 id="ussdtodb-acus09"><strong><code>USSDTODB-ACUS09</code></strong> Я как пользователь ХОЧУ видеть зависимости серверного объекта от других объектов, если такие имеются ЧТОБЫ видеть какие объекты использует выбранные объект миграции<a class="headerlink" href="#ussdtodb-acus09" title="Permanent link">¶</a></h2>
 <ol>
 <li>На главной форме расположены дополнительные таблицы под вывод зависящих и зависимых объектов от выбранного в главной таблице</li>
 <li>Данные в дополнительных таблицах обновляются для выбранного объекта</li>
 </ol>
-<h2 id="ussdtodb-acus10"><span class="enumerate-headings-plugin enumerate-heading-plugin">12.10</span> <strong><code>USSDTODB-ACUS10</code></strong> Я как пользователь ХОЧУ видеть статусы перевода зависимых серверных объектов ЧТОБЫ принимать решение по целесообразности брать в работу по миграции данный объект<a class="headerlink" href="#ussdtodb-acus10" title="Permanent link">¶</a></h2>
+<h2 id="ussdtodb-acus10"><strong><code>USSDTODB-ACUS10</code></strong> Я как пользователь ХОЧУ видеть статусы перевода зависимых серверных объектов ЧТОБЫ принимать решение по целесообразности брать в работу по миграции данный объект<a class="headerlink" href="#ussdtodb-acus10" title="Permanent link">¶</a></h2>
 <ol>
 <li>В дополнительных таблицах присутствует статус зависимых объектов</li>
 <li>Если в зависимых объектах присутствует хотя бы один в статусе отличного от "Выполнено", то установка статуса "В работе" невозможна</li>
 </ol>
-<h2 id="ussdtodb-acus11"><span class="enumerate-headings-plugin enumerate-heading-plugin">12.11</span> <strong><code>USSDTODB-ACUS11</code></strong> Я как пользователь ХОЧУ произвести миграцию таблицы базы данных по одной кнопке ЧТОБЫ сократить время миграции и сконцентрироваться на других объектах БД проекта<a class="headerlink" href="#ussdtodb-acus11" title="Permanent link">¶</a></h2>
+<h2 id="ussdtodb-acus11"><strong><code>USSDTODB-ACUS11</code></strong> Я как пользователь ХОЧУ произвести миграцию таблицы базы данных по одной кнопке ЧТОБЫ сократить время миграции и сконцентрироваться на других объектах БД проекта<a class="headerlink" href="#ussdtodb-acus11" title="Permanent link">¶</a></h2>
 <ol>
 <li>Миграция таблицы осуществляется путем нажатия кнопки "Воссоздать таблицу в новой базе данных"</li>
 <li>Функционал по миграции таблицы доступен только для объектов с типом "TABEL", для остальных данная функция недоступна</li>
 <li>Данные попадают в таблицу в полном объём с конвертацией в нужный тип</li>
 </ol>
-<h2 id="ussdtodb-acus12"><span class="enumerate-headings-plugin enumerate-heading-plugin">12.12</span> <strong><code>USSDTODB-ACUS12</code></strong> Я как пользователь ХОЧУ иметь возможность пред установить типы данных колонок таблиц ЧТОБЫ сократить время на ручные операции при конвертации таблицы и сохранить консистентность данных<a class="headerlink" href="#ussdtodb-acus12" title="Permanent link">¶</a></h2>
+<h2 id="ussdtodb-acus12"><strong><code>USSDTODB-ACUS12</code></strong> Я как пользователь ХОЧУ иметь возможность пред установить типы данных колонок таблиц ЧТОБЫ сократить время на ручные операции при конвертации таблицы и сохранить консистентность данных<a class="headerlink" href="#ussdtodb-acus12" title="Permanent link">¶</a></h2>
 <ol>
 <li>Выполняются все критерии для <a href="./#ussdtodb-acus11">USSDTODB-ACUS11</a></li>
 <li>Перед выполнением миграции выводится сообщение с предложением поменять тип колонок в итоговой таблице для миграции</li>
 <li>Выбор типа колонки выполняется по выбору из фиксированного списка типов колонок БД</li>
 <li>Предустанавливается возможный тип колонок для мигрируемой таблицы</li>
 </ol>
-<h2 id="ussdtodb-acus13"><span class="enumerate-headings-plugin enumerate-heading-plugin">12.13</span> <strong><code>USSDTODB-ACUS13</code></strong> Я как пользователь ХОЧУ сменить статус выполнения миграции объекта БД ЧТОБЫ показать, что работы по миграции объекта БД завершены<a class="headerlink" href="#ussdtodb-acus13" title="Permanent link">¶</a></h2>
+<h2 id="ussdtodb-acus13"><strong><code>USSDTODB-ACUS13</code></strong> Я как пользователь ХОЧУ сменить статус выполнения миграции объекта БД ЧТОБЫ показать, что работы по миграции объекта БД завершены<a class="headerlink" href="#ussdtodb-acus13" title="Permanent link">¶</a></h2>
 <ol>
 <li>Все статусы выбираются из фиксированного списка:<ul>
 <li>"Готово для миграции"</li>
@@ -771,18 +693,18 @@
 </ul>
 </li>
 </ol>
-<h2 id="ussdtodb-acus14-jira"><span class="enumerate-headings-plugin enumerate-heading-plugin">12.14</span> <strong><code>USSDTODB-ACUS14</code></strong> Я как пользователь ХОЧУ функционал автоматической смены статуса задачи в Jira ЧТОБЫ сократить время на ручные операции<a class="headerlink" href="#ussdtodb-acus14-jira" title="Permanent link">¶</a></h2>
+<h2 id="ussdtodb-acus14-jira"><strong><code>USSDTODB-ACUS14</code></strong> Я как пользователь ХОЧУ функционал автоматической смены статуса задачи в Jira ЧТОБЫ сократить время на ручные операции<a class="headerlink" href="#ussdtodb-acus14-jira" title="Permanent link">¶</a></h2>
 <ol>
 <li>После смены статуса объекта выводится сообщение с предложением отправить статус в Jira</li>
 </ol>
-<h2 id="ussdtodb-acus15"><span class="enumerate-headings-plugin enumerate-heading-plugin">12.15</span> <strong><code>USSDTODB-ACUS15</code></strong> Я как пользователь ХОЧУ видеть историю изменения объекта БД ЧТОБЫ оперативно решить выявленные ошибки<a class="headerlink" href="#ussdtodb-acus15" title="Permanent link">¶</a></h2>
+<h2 id="ussdtodb-acus15"><strong><code>USSDTODB-ACUS15</code></strong> Я как пользователь ХОЧУ видеть историю изменения объекта БД ЧТОБЫ оперативно решить выявленные ошибки<a class="headerlink" href="#ussdtodb-acus15" title="Permanent link">¶</a></h2>
 <ol>
 <li>Вызов аудита по объектам БД осуществляется через кнопку на панели инструментов, при выбранном объекте БД.</li>
 <li>Фиксация изменений происходит путём проверки последнего изменения и версии объекта БД</li>
 <li>Фиксация изменений происходит автоматически</li>
 <li>Изменения фиксируются только для объекта, который находится в БД Миграции</li>
 </ol>
-<h2 id="ussdtodb-acus16"><span class="enumerate-headings-plugin enumerate-heading-plugin">12.16</span> <strong><code>USSDTODB-ACUS16</code></strong> Я как пользователь ХОЧУ вести журнал работ из системы ЧТОБЫ вести задачи в едином формате и едином месте<a class="headerlink" href="#ussdtodb-acus16" title="Permanent link">¶</a></h2>
+<h2 id="ussdtodb-acus16"><strong><code>USSDTODB-ACUS16</code></strong> Я как пользователь ХОЧУ вести журнал работ из системы ЧТОБЫ вести задачи в едином формате и едином месте<a class="headerlink" href="#ussdtodb-acus16" title="Permanent link">¶</a></h2>
 <ol>
 <li>Вызов формы журнала работ выполняется по выбранному объекту БД путем нажатия на кнопку "Открыть журнал работ" на панели инструментов главной формы системы.</li>
 <li>В форме "Журнал работ" отображены работы по объекту в разрезе времени.</li>
@@ -794,52 +716,52 @@
 </li>
 <li>При любых манипуляциях с журналом работ происходит синхронизация с журналом по задаче в Jira</li>
 </ol>
-<h1 id="user-story-ussdta"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.</span> Критерии приёмки для User Story <a href="../../requirements/#ussdta-user-story-jar">USSDTA</a><a class="headerlink" href="#user-story-ussdta" title="Permanent link">¶</a></h1>
-<h2 id="ussdta-acus01"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1</span> <strong><code>USSDTA-ACUS01</code></strong> Я как пользователь анализатора миграции клиентской части ХОЧУ  иметь возможность собрать информацию по интересующему меня модулю ЧТОБЫ быстро получить актуальную информацию о текущем состоянии миграции модуля<a class="headerlink" href="#ussdta-acus01" title="Permanent link">¶</a></h2>
+<h1 id="user-story-ussdta">Критерии приёмки для User Story <a href="../../requirements/#ussdta-user-story-jar">USSDTA</a><a class="headerlink" href="#user-story-ussdta" title="Permanent link">¶</a></h1>
+<h2 id="ussdta-acus01"><strong><code>USSDTA-ACUS01</code></strong> Я как пользователь анализатора миграции клиентской части ХОЧУ  иметь возможность собрать информацию по интересующему меня модулю ЧТОБЫ быстро получить актуальную информацию о текущем состоянии миграции модуля<a class="headerlink" href="#ussdta-acus01" title="Permanent link">¶</a></h2>
 <ol>
 <li>Пользователь может запустить анализ файловой части по модулю</li>
 <li>Анализ собирается по всем файлам, относящимся к модулю</li>
 <li>Сервис передает сформированную информацию о процессе сбора данных в сервис сбора статистики</li>
 <li>В процессе сбора статистики собранные аналитические сведения передаются в сервис сбора статистики  </li>
 </ol>
-<h2 id="ussdta-acus02"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.2</span> <strong><code>USSDTA-ACUS02</code></strong> Я как пользователь анализатора миграции клиентской части ХОЧУ  иметь возможность собрать информацию по интересующему меня проекту ЧТОБЫ быстро получить актуальную информацию о текущем состоянии миграции проекта<a class="headerlink" href="#ussdta-acus02" title="Permanent link">¶</a></h2>
+<h2 id="ussdta-acus02"><strong><code>USSDTA-ACUS02</code></strong> Я как пользователь анализатора миграции клиентской части ХОЧУ  иметь возможность собрать информацию по интересующему меня проекту ЧТОБЫ быстро получить актуальную информацию о текущем состоянии миграции проекта<a class="headerlink" href="#ussdta-acus02" title="Permanent link">¶</a></h2>
 <ol>
 <li>Пользователь может запустить анализ файловой части по проекту</li>
 <li>Анализ собирается по всем файлам, относящимся к проекту</li>
 <li>Сервис передает информацию о процессе сбора данных в сервис сбора статистики</li>
 <li>В процессе сбора статистики собранные аналитические сведения передаются в сервис сбора статистики  </li>
 </ol>
-<h2 id="ussdta-acus03"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.3</span> <strong><code>USSDTA-ACUS03</code></strong> Я как пользователь анализатора миграции клиентской части ХОЧУ  иметь механизм автоматического анализа ЧТОБЫ не тратить время на ожидание завершения анализа тогда, когда актуальность данных для меня не является критичным фактором<a class="headerlink" href="#ussdta-acus03" title="Permanent link">¶</a></h2>
+<h2 id="ussdta-acus03"><strong><code>USSDTA-ACUS03</code></strong> Я как пользователь анализатора миграции клиентской части ХОЧУ  иметь механизм автоматического анализа ЧТОБЫ не тратить время на ожидание завершения анализа тогда, когда актуальность данных для меня не является критичным фактором<a class="headerlink" href="#ussdta-acus03" title="Permanent link">¶</a></h2>
 <ol>
 <li>Сервис имеет механизм полного автоматического анализа клиентской части, который запускается с определенной периодичностью</li>
 <li>Сервис передает сформированную информацию о процессе сбора данных в сервис сбора статистики</li>
 <li>В процессе сбора статистики в автоматическом режиме данные отдаются сервису сбора аналитики</li>
 </ol>
-<h2 id="ussdta-acus04"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.4</span> <strong><code>USSDTA-ACUS04</code></strong> Я как пользователь анализатора миграции клиентской части ХОЧУ  запускать полный анализ клиентской части вручную ЧТОБЫ собрать полную актуальную информацию о текущем состоянии миграции всей клиентской части в компании<a class="headerlink" href="#ussdta-acus04" title="Permanent link">¶</a></h2>
+<h2 id="ussdta-acus04"><strong><code>USSDTA-ACUS04</code></strong> Я как пользователь анализатора миграции клиентской части ХОЧУ  запускать полный анализ клиентской части вручную ЧТОБЫ собрать полную актуальную информацию о текущем состоянии миграции всей клиентской части в компании<a class="headerlink" href="#ussdta-acus04" title="Permanent link">¶</a></h2>
 <ol>
 <li>Пользователь может запустить полный анализ файловой части</li>
 <li>Анализ собирается по всем файлам, хранящимся в системе</li>
 <li>Сервис передает сформированную информацию о процессе сбора данных в сервис сбора статистики</li>
 <li>В процессе сбора статистики собранные аналитические сведения передаются в сервис сбора статистики  </li>
 </ol>
-<h2 id="ussdta-acus05"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.5</span> <strong><code>USSDTA-ACUS05</code></strong> Я как пользователь анализатора миграции клиентской части ХОЧУ  иметь возможность добавить модуль ЧТОБЫ иметь возможность в дальнейшем привязать к нему файлы<a class="headerlink" href="#ussdta-acus05" title="Permanent link">¶</a></h2>
+<h2 id="ussdta-acus05"><strong><code>USSDTA-ACUS05</code></strong> Я как пользователь анализатора миграции клиентской части ХОЧУ  иметь возможность добавить модуль ЧТОБЫ иметь возможность в дальнейшем привязать к нему файлы<a class="headerlink" href="#ussdta-acus05" title="Permanent link">¶</a></h2>
 <ol>
 <li>Пользователь может добавлять модули в сервис анализа клиентской части</li>
 <li>Пользователь может удалять модуля из сервиса анализа клиентской части</li>
 <li>Пользователь может редактировать модуль в сервисе анализа клиентской части</li>
 </ol>
-<h2 id="ussdta-acus06"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.6</span> <strong><code>USSDTA-ACUS06</code></strong> Я как пользователь анализатора миграции клиентской части ХОЧУ  привязывать файлы к модулям и проектам ЧТОБЫ иметь возможность запускать анализ по модулям и проектам, а также видеть статистику по модулям и по проектам<a class="headerlink" href="#ussdta-acus06" title="Permanent link">¶</a></h2>
+<h2 id="ussdta-acus06"><strong><code>USSDTA-ACUS06</code></strong> Я как пользователь анализатора миграции клиентской части ХОЧУ  привязывать файлы к модулям и проектам ЧТОБЫ иметь возможность запускать анализ по модулям и проектам, а также видеть статистику по модулям и по проектам<a class="headerlink" href="#ussdta-acus06" title="Permanent link">¶</a></h2>
 <ol>
 <li>Пользователь может привязать файл к модулю</li>
 <li>Пользователь может привязать файл к проекту</li>
 <li>Пользователь может отвязать файл от модуля</li>
 <li>Пользователь может отвязать файл от проекта</li>
 </ol>
-<h2 id="ussdta-acus07"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.7</span> <strong><code>USSDTA-ACUS07</code></strong> Я как пользователь анализатора миграции клиентской части ХОЧУ удалить устаревший артефакт из сервиса анализа клиентской части ЧТОБЫ артефакты, которых более не будет в системе контроля версий не занимали место на экране при просмотре списока<a class="headerlink" href="#ussdta-acus07" title="Permanent link">¶</a></h2>
+<h2 id="ussdta-acus07"><strong><code>USSDTA-ACUS07</code></strong> Я как пользователь анализатора миграции клиентской части ХОЧУ удалить устаревший артефакт из сервиса анализа клиентской части ЧТОБЫ артефакты, которых более не будет в системе контроля версий не занимали место на экране при просмотре списока<a class="headerlink" href="#ussdta-acus07" title="Permanent link">¶</a></h2>
 <ol>
 <li>Пользователь может удалить существующий непривязанный к модулю артефакт</li>
 </ol>
-<h2 id="ussdta-acus08"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.8</span> <strong><code>USSDTA-ACUS08</code></strong> Я как пользователь анализатора миграции клиентской части ХОЧУ получить список непривязанных файлов ЧТОБЫ привязать эти файлы к модулям и проектам<a class="headerlink" href="#ussdta-acus08" title="Permanent link">¶</a></h2>
+<h2 id="ussdta-acus08"><strong><code>USSDTA-ACUS08</code></strong> Я как пользователь анализатора миграции клиентской части ХОЧУ получить список непривязанных файлов ЧТОБЫ привязать эти файлы к модулям и проектам<a class="headerlink" href="#ussdta-acus08" title="Permanent link">¶</a></h2>
 <ol>
 <li>Пользователь может получить список непривязанных к модулям файлов</li>
 </ol>
@@ -853,34 +775,6 @@
 </button>
 </main>
 <footer class="md-footer">
-<nav aria-label="Нижний колонтитул" class="md-footer__inner md-grid">
-<a aria-label="Назад: API приложения через gRPC" class="md-footer__link md-footer__link--prev" href="../../api/">
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
-</div>
-<div class="md-footer__title">
-<span class="md-footer__direction">
-                Назад
-              </span>
-<div class="md-ellipsis">
-                API приложения через gRPC
-              </div>
-</div>
-</a>
-<a aria-label="Вперед: Регистрация клиента" class="md-footer__link md-footer__link--next" href="../../tasks/registration_client/">
-<div class="md-footer__title">
-<span class="md-footer__direction">
-                Вперед
-              </span>
-<div class="md-ellipsis">
-                Регистрация клиента
-              </div>
-</div>
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
-</div>
-</a>
-</nav>
 <div class="md-footer-meta md-typeset">
 <div class="md-footer-meta__inner md-grid">
 <div class="md-copyright">
@@ -900,6 +794,11 @@
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.expand", "navigation.path", "navigation.top", "navigation.footer", "navigation.tabs", "navigation.indexes", "toc.integrate", "toc.follow", "search.highlight", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}}</script>
 <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+<script src="../../theme/js/viewer-static.min.js"></script>
+<script src="../../theme/js/drawio-reload.js"></script>
+<script src="../../assets/mkdocs_puml/puml.js"></script>
+<script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
+<script src="../../assets/mkdocs_puml/interaction.js"></script>
 <script>
     var elements = document.getElementsByClassName("lightgallery");
     for (var i = 0; i < elements.length; i++) {
