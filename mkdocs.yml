@@ -81,8 +81,6 @@ plugins:
   - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - swagger-ui-tag
-  - drawio:
-      edit: false
   - plantuml:
       puml_url: https://www.plantuml.com/plantuml/
       puml_keyword: uml
