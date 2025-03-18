@@ -62,9 +62,6 @@ markdown_extensions:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
@@ -84,16 +81,14 @@ plugins:
   - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - swagger-ui-tag
-  - build_plantuml:
-      render: 'server' # or "local" for local rendering
-      bin_path: '/usr/local/bin/plantuml' # ignored when render: server
-      server: 'http://www.plantuml.com/plantuml' # official plantuml server
-      disable_ssl_certificate_validation: true # for self-signed and invalid certs
-      output_format: 'svg' # or "png"
-      diagram_root: 'docs/diagrams' # should reside under docs_dir
-      output_folder: 'out'
-      input_folder: 'src'
-      input_extensions: '' # comma separated list of extensions to parse, by default every file is parsed
+  - drawio:
+      edit: false
+  - plantuml:
+      puml_url: https://www.plantuml.com/plantuml/
+      puml_keyword: uml
+      request_timeout: 300
+      verify_ssl: false
+      verbose: false
   - enumerate-headings:
       exclude:
         - index.md
@@ -101,27 +96,38 @@ plugins:
   # - print-site:
   #     path_to_pdf: "assets/test.pdf"
   - glightbox
-
+extra_javascript:
+  - theme/js/viewer-static.min.js
+  - theme/js/drawio-reload.js
 nav:
   - Домашняя страница:
     - index.md
-  - Документация:
+  - Глоссарий:
     - glossary.md
+  - Документация бизнес-требований:
     - general info.md
     - goals.md
     - interviews.md
     - characteristics.md
     - business process.md
+  - Документация системы :
     - requirements.md
     - model.md
     - architecture.md
     - uiux.md
     - api.md
-  - Критерии приёмки:
-    - ac/AC.md
   - Задачи:
-    - tasks/registration_client.md
-    - tasks/registration_user.md
-    - tasks/auth_client.md
-    - tasks/auth_user.md
-    - tasks/booking_table.md
+    - ac/DoDDoR.md
+    - tasks/USSCMS.md
+    - tasks/USSDTODB.md
+    - tasks/USSDTA.md
+  - Тесты:
+    - tests/USSCMS.md
+    - tests/USSDTODB.md
+    - tests/USSDTA.md
+
+not_in_nav: |
+  /ac/AC.md
+  /tasks/assets/Alex/Seq.md
+  /tasks/assets/Rus/Seq.md
+  /tasks/assets/Sergo/Seq.md
