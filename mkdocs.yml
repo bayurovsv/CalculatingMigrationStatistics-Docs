@@ -119,6 +119,7 @@ nav:
   - Задачи:
     - ac/DoDDoR.md
     - tasks/USSCMS.md
+    - tasks/USSCMS.html
     - tasks/USSDTODB.md
     - tasks/USSDTA.md
   - Тесты:
