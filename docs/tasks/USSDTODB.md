@@ -9,14 +9,14 @@
 | 5   | Вышестоящая задача    | MIGRXXI-007                                                                                                                                            |
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
-| 8   | Размещение постановки | [User Story Map по USSCMS](../requirements.md#usscms-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSCMS-ACUS01](../ac/AC.md#usscms-acus01)                                                                                                             |
+| 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Таблицы PROJECTS ,MODULES, USER, PROJECT_USER_CON, USER_GROUP_CON, USER, FUNC_GROUP, JIRA_TASKS, JIRA_TASKS_WORK_LOG](../model.md#модель-данных-сервиса-получения-данных-по-процессу-миграции-объектов-бд)                                                                                                            |
+| 9   | Критерии приёмки      | [USSCMS-ACUS01](../ac/AC.md#критерии-приёмки-для-user-story-ussdtodb)                                                                                  |
 | 10  | Статус                | Ожидает исполнения                                                                                                                                     |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #DTOBD                                                                                                                                                 |
 | 13  | Спринт                | 102432.0042                                                                                                                                            |
 | 14  | Предусловие выполнения| Развернута база данных с таблицами PROJECTS ,MODULES, USER, PROJECT_USER_CON, USER_GROUP_CON, USER, FUNC_GROUP, JIRA_TASKS, JIRA_TASKS_WORK_LOG. Развернут сервис с механизмом получения запросов из сервиса расчёта статистики миграции                                                                                                             |
-| 15  | Окружение             | OC Windows 7, Microsoft Edge Версия 134.0.3124.51   
+| 15  | Окружение             | OC Windows 7, Microsoft Edge Версия 134.0.3124.51                                                                                                      |
 
 |№   | Наименование           | Значение                                                                                                                                               |
 |-----| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -27,8 +27,8 @@
 | 5   | Вышестоящая задача    | MIGRXXI-018                                                                                                                                            |
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
-| 8   | Размещение постановки | [User Story Map по USSCMS](../requirements.md#usscms-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSCMS-ACUS01](../ac/AC.md#usscms-acus01)                                                                                                             |
+| 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Таблицы DB_OBJECTS, DB_OBJECTS_CON, DB_OBJECTS_HISTORY, DB_OBJECTS_HISTORY_TYPE, DB_OBJECTS_MODULES_FUNCPART_CON,FUNC_PART](../model.md#модель-данных-сервиса-получения-данных-по-процессу-миграции-объектов-бд)                                                                                                            |
+| 9   | Критерии приёмки      | [USSCMS-ACUS01](../ac/AC.md#критерии-приёмки-для-user-story-ussdtodb)                                                                                  |
 | 10  | Статус                | Ожидает исполнения                                                                                                                                     |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #DTOBD                                                                                                                                                 |
@@ -45,14 +45,14 @@
 | 5   | Вышестоящая задача    | MIGRXXI-019                                                                                                                                            |
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
-| 8   | Размещение постановки | [User Story Map по USSCMS](../requirements.md#usscms-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSCMS-ACUS01](../ac/AC.md#usscms-acus01)                                                                                                             |
+| 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)                                                                                   |
+| 9   | Критерии приёмки      | [USSCMS-ACUS01](../ac/AC.md#критерии-приёмки-для-user-story-ussdtodb)                                                                                  |
 | 10  | Статус                | Ожидает исполнения                                                                                                                                     |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #DTOBD                                                                                                                                                 |
 | 13  | Спринт                | 102432.0042                                                                                                                                            |
 | 14  | Предусловие выполнения| Развернут сервис с механизмом анализа и хранения информации по объектам серверной части                                                                |
-| 15  | Окружение             | OC Windows 7, Microsoft Edge Версия 134.0.3124.51 
+| 15  | Окружение             | OC Windows 7, Microsoft Edge Версия 134.0.3124.51                                                                                                      |
 
 |№   | Наименование           | Значение                                                                                                                                               |
 |-----| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -63,8 +63,8 @@
 | 5   | Вышестоящая задача    | MIGRXXI-020                                                                                                                                            |
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
-| 8   | Размещение постановки | [User Story Map по USSCMS](../requirements.md#usscms-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSCMS-ACUS01](../ac/AC.md#usscms-acus01)                                                                                                             |
+| 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)                                                                                   |
+| 9   | Критерии приёмки      | [USSCMS-ACUS01](../ac/AC.md#критерии-приёмки-для-user-story-ussdtodb)                                                                                  |
 | 10  | Статус                | Ожидает исполнения                                                                                                                                     |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #DTOBD                                                                                                                                                 |
